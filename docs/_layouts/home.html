@@ -37,9 +37,9 @@
           <div class="title">Декларативность</div>
           <p>
             Litho использует декларативный API для определения компонентов пользовательского интерфейса. 
-            Вы просто описываете макет для своего пользовательского интерфейса на основе набора неизменных входных данных, 
+            Вы просто описываете макет для своего UI на основе набора неизменных параметров, 
             а фреймворк заботится обо всем остальном. Благодаря генерации кода Litho может выполнять оптимизацию 
-            для вашего пользовательского интерфейса под капотом, сохраняя ваш код простым и удобным в обслуживании.
+            для вашего UI под капотом, сохраняя ваш код простым и удобным в обслуживании.
           </p>
         </div>
       </div>
@@ -53,7 +53,7 @@
         <div class="column">
           <div class="title">Асинхронная компоновка</div>
           <p>
-            Litho может выполнять "measure" и "layout" ваш интерфейс заранее, не блокируя UI тред. 
+            Litho может выполнять "measure" и "layout" вашего интерфейса заранее, не блокируя UI тред. 
             Отделяя свою систему компоновки от традиционной системы Android View, 
             Litho может избегать ограничений UI треда, накладываемого в Android.
           </p>
@@ -68,12 +68,12 @@
           <img src="{{ '/static/images/flat.png' | relative_url }}">
         </div>
         <div class="column">
-          <div class="title">Flatter view hierarchies</div>
+          <div class="title">Уменьшение иерархии View</div>
           <p>
-            Litho uses <a href="https://facebook.github.io/yoga">Yoga</a> for layout and
-            automatically reduces the number of ViewGroups that your UI contains. This, in addition
-            to Litho's text optimizations, allows for much smaller view hierarchies and improves
-            both memory and scroll performance.
+            Litho использует <a href="https://facebook.github.io/yoga">Yoga</a> для расчета позиций 
+            View и автоматически уменьшает количества ViewGroup, которые содержит ваш UI. 
+            Это, вместе с оптимизаций текста в Litho, позволяет значительно уменьшить иерархии View 
+            и снизить потребление памяти, а так же сделать скролл планее.
           </p>
         </div>
       </div>
