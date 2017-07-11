@@ -1,7 +1,7 @@
 # Site settings
 permalink: /blog/:year/:month/:day/:title.html
 title: Litho
-tagline: Декларативная фреймворк описания UI для Android
+tagline: A declarative UI framework for Android
 #description: >
 #  Add description here
 fbappid: "1615782811974223"
