@@ -5,15 +5,15 @@ layout: docs
 permalink: /docs/intro
 ---
 
-Litho is a declarative framework for building efficient user interfaces (UI) on
-Android. It allows you to write highly-optimized Android views through a simple
-functional API based on Java annotations. It was [primarily built](/docs/uses)
-to implement complex scrollable UIs based on RecyclerView.
+Litho - это декларативный фреймворк для создания эффективных пользовательских интерфейсов (UI) для Android. 
+Он позволяет описывать высокооптимизированные представления, используя простое функциональное API, 
+основанное на аннотациях Java. Фреймворк был [изначально спроектирован](/docs/uses) для описания 
+сложных пролистываемых интерфейсов, основанных на RecyclerView.
 
-With Litho, you build your UI in terms of *components* instead of interacting
-directly with traditional Android views. A *component* is essentially a
-function that takes immutable inputs, called *props*, and returns a component
-hierarchy describing your user interface.
+С фреймворком Litho вы оперируете *компонентами*, не взаимодействуя напрямую 
+с традиционными представлениями Android. По сути, *компонент* - это функция, 
+принимающая неизменяемые входные значения (*props*) и возвращающая иерархию компонентов, 
+отражающую ваш интерфейс
 
 ```java
 @LayoutSpec
@@ -35,21 +35,18 @@ class HelloComponentSpec {
 }
 ```
 
-You simply declare what you want to display and Litho takes care of rendering
-it in the most efficient way by computing [layout in a background
-thread](/docs/asynchronous-layout), automatically [flattening your view
-hierarchy](/docs/view-flattening), and [incrementally
-rendering](/docs/inc-mount-architecture) complex components.
+Вы просто указываете, что вы хотите показать - а Litho обеспечивает наиболее 
+эффективный способ отображения за счет расчетов [расположения элементов в фоновом потоке](/docs/asynchronous-layout), 
+автоматического [сглаживания иерархии](/docs/view-flattening) и [инкрементальной отрисовки](/docs/inc-mount-architecture) сложных компонентов.
 
-## Watch the F8 presentation
+## Посмотрите презентацию с F8
 
 <a href="https://developers.facebook.com/videos/f8-2017/litho-a-declarative-framework-for-efficient-uis/" target="_blank">
   <img src="{{ '/static/images/f8-intro.png' | relative_url }}">
 </a>
 
-## Continue exploring
+## Продолжайте изучать
 
-Have a look at our [Tutorial](/docs/tutorial) for a step-by-step guide on using
-Litho in your app. You can also read the quick start guide on how to
-[write](/docs/writing-components) and [use](/docs/using-components) your own
-Litho components.
+В нашем [самоучителе](/docs/tutorial) вы найдете пошаговую инструкцию по использованию 
+Litho в вашем приложении. Вы также можете прочитать статьи о том, как [писать](/docs/writing-components) 
+и [применять](/docs/using-components) ваши собственные компоненты Litho в нашем кратком руководстве.
