@@ -1,6 +1,6 @@
 ---
 docid: intro
-title: What is Litho?
+title: Что такое Litho?
 layout: docs
 permalink: /docs/intro
 ---
